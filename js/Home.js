@@ -63,6 +63,12 @@ Aside__Overlay.addEventListener('click', () => {
 
 // ======= Function Start ======= //
 
+window.addEventListener('load', () => {
+  if (All__User__Arr == "") {
+    window.location = "/JAVASCRIPT/js__localstoeage__2/Form.html";
+  }
+});
+
 function Get__AllUsers__Data(All__User__Arr) {
   People__Item__Wrapper.innerHTML = "";
   for (const All__User of All__User__Arr) {
