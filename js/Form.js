@@ -79,7 +79,7 @@ Btn__Login.forEach(btn => { btn.addEventListener('click', Opan__SignIn__Containe
 // ======= Function Start ======= //
 function Delete__All__Users() {
   localStorage.clear();
-  window.location = "./Form.html";
+  window.location = "../Form.html";
 }
 
 function Opan__SignIn__Container() {
@@ -88,7 +88,7 @@ function Opan__SignIn__Container() {
   header__text.textContent = "Login";
 
   if (localStorage.getItem('Logged') == "true") {
-    window.location = "/JAVASCRIPT/js__localstoeage__2/Home.html";
+    window.location = "../Home.html";
   }
 }
 
@@ -232,7 +232,7 @@ function Login__User(Logged__User) {
   localStorage.removeItem('Logged__User');
   localStorage.setItem('Logged', "true");
   localStorage.setItem('Logged__User', JSON.stringify(Logged__User));
-  window.location = "/JAVASCRIPT/js__localstoeage__2/Home.html";
+  window.location = "../Home.html";
 }
 
 function Form__Next() {
