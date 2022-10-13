@@ -194,6 +194,10 @@ function SignUp__User(FirstName, LastName, Email, Age, Gender, Bio, SecretKey, P
 
   User__Arr.push(new Users(FirstName, LastName, Email, Age, Gender, Bio, SecretKey, Password));
   localStorage.setItem("User", JSON.stringify(User__Arr));
+  
+  Form__Wrapper.classList.replace("Sign-Up", "Sign-In");
+  Form__Wrapper.classList.replace("Sign-Pass", "Sign-In");
+  header__text.textContent = "Login";
 }
 
 function SignIn__Valid__Input() {
