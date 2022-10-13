@@ -65,7 +65,7 @@ Aside__Overlay.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
   if (All__User__Arr == "") {
-    window.location = "/JAVASCRIPT/js__localstoeage__2/Form.html";
+    window.location = "../Form.html";
   }
 });
 
@@ -155,8 +155,6 @@ function Get__OvnerUser__Data() {
 
       Btn__User__Icon.classList.add(`${Ovner.Gender == "Male" ? Ovner.Age >= 18 ? "Img__Man" : "Img__Boy" : Ovner.Age >= 18 ? "Img__Woman" : "Img__Girl"}`);
     }
-  } else {
-    console.log("Empty");
   }
 }
 
@@ -225,7 +223,7 @@ function Loguot__Ovner__User() {
   localStorage.setItem("Logged", "felse");
   if (localStorage.getItem("Logged") == "felse") {
     localStorage.removeItem("Logged__User");
-    window.location = "/JAVASCRIPT/js__localstoeage__2/Form.html";
+    window.location = "../Form.html";
   }
 }
 
