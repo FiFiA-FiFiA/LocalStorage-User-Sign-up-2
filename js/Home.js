@@ -38,7 +38,7 @@ const User__Profile__Content = document.querySelector("[User__Profile__Content]"
 // User Array
 let All__User__Arr = JSON.parse(localStorage.getItem("User")) || [];
 let Ovner__User = JSON.parse(localStorage.getItem("Logged__User")) || [];
-let Logged = JSON.parse(localStorage.getItem("Logged")) || "true";
+let Logged = JSON.parse(localStorage.getItem("Logged")) || "felse";
 let New__All__User__Arr = All__User__Arr;
 
 // ======= Eventlistener Start ======= //
