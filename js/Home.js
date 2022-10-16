@@ -64,7 +64,7 @@ Aside__Overlay.addEventListener('click', () => {
 // ======= Function Start ======= //
 
 window.addEventListener('load', () => {
-  if (All__User__Arr == "") {
+  if (All__User__Arr == "" || Logged == "" || Logged == "felse") {
     window.location = "../Form.html";
   }
 });
