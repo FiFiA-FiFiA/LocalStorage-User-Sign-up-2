@@ -57,8 +57,8 @@ const header__text = document.querySelector("[header__text]");
 
 // User Array
 let User__Arr = JSON.parse(localStorage.getItem("_User")) || [];
-let Form__Url = "/JAVASCRIPT/js__localstoeage__3/Form.html";
-let Home__Url = "/JAVASCRIPT/js__localstoeage__3/Home.html";
+let Form__Url = "./Form.html";
+let Home__Url = "./Home.html";
 
 
 // Data select

@@ -72,13 +72,9 @@ let Ovner__User = JSON.parse(localStorage.getItem("_Logged__User")) || [];
 let Logged__User__Index = JSON.parse(localStorage.getItem("_Logged__User__Index")) || 0;
 let Logged = JSON.parse(localStorage.getItem("_Logged")) || "false";
 let New__All__User__Arr = All__User__Arr;
-let new__Ovner__User = [];
-let User__Arr = [];
-new__Ovner__User.push(Ovner__User);
-new__Ovner__User = new__Ovner__User.flatMap(i => i);
 
-let Form__Url = "/JAVASCRIPT/js__localstoeage__3/Form.html";
-let Home__Url = "/JAVASCRIPT/js__localstoeage__3/Home.html";
+let Form__Url = "./Form.html";
+let Home__Url = "./Home.html";
 
 // ======= Eventlistener Start ======= //
 Btn__User__Icon.addEventListener('click', OpanClose__Nav__Container);
@@ -462,10 +458,6 @@ function ResetPassword__Valid() {
   let SecretKey__Value = SecretKey__Input.value;
   let NewPassword__Value = NewPassword__input.value;
   let Confirm__NewPassword__Value = Confirm__NewPassword__input.value;
-
-  let new__Ovner__User = [];
-  new__Ovner__User.push(All__User__Arr);
-  new__Ovner__User = new__Ovner__User.flatMap(i => i);
 
   let findIndex = All__User__Arr.findIndex(i => i.Email == Email__Value && i.SecretKey == SecretKey__Value);
   let index = findIndex;
