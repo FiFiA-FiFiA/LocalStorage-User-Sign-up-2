@@ -164,6 +164,7 @@ body {
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--bg__clr-dark-700);
+  overflow: hidden;
 }
 
 .container .form__Container .form .input.error {
@@ -176,8 +177,13 @@ body {
 
 .container .form__Container .form .input.Text__Area {
   text-align: start;
+  overflow-y: auto;
   resize: none;
   height: 90px;
+}
+
+.container .form__Container .form .input.Text__Area::-webkit-scrollbar {
+  width: 0.1rem;
 }
 
 .container .form__Container .form .Input__Row__Wrapper select {

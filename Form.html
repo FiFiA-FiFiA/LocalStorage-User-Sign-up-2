@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign up | | Form</title>
+  <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/Form.css">
 
@@ -24,17 +25,17 @@
           <div class="Input__Row__Wrapper">
             <input type="text" class="input" placeholder="First name" FirstName__Input>
             <input type="text" class="input" placeholder="Last name" LastName__Input>
-          </div>
-          <input class="input" type="email" placeholder="Email" required Email__Input>
-          <div class="Input__Row__Wrapper">
-            <select class="input" Age__Select>
-              <option value="">Age</option>    
-            </select>
             <select class="input" Gender__Select>
               <option value="">Gender</option>    
               <option value="Female">Female</option>    
               <option value="Male">Male</option>    
             </select>
+          </div>
+          <input class="input" type="email" placeholder="Email" required Email__Input>
+          <div class="Input__Row__Wrapper">
+            <label for="File__Input" class="input" File__Label>Choose Image</label>
+            <input type="file" id="File__Input" accept="image/png,image/jpeg" File__Input hidden>
+            <input type="date" class="input" min="1970-01-01" Data__Input>
           </div>
           <textarea class="input Text__Area" Bio__Input placeholder="Enter Bio"></textarea>
           <input class="input" type="text" placeholder="Secret key" required SecretKey__Input>
@@ -51,7 +52,7 @@
           <div class="Btn__Forgot__Password__Wrapper">
             <p class="Forgot__Password" Btn__Forgot__Password>Forgot Password?</p>
           </div>
-          <button type="button" class="btn" Btn__Submit>Login Now</button>
+          <button type="button" class="btn" Btn__Submit>Submit</button>
           <p>Don't have an account? <a Btn__SignUp>Sign up</a></p>
         </form>
         <form action="#" class="form Sign__Pass">
